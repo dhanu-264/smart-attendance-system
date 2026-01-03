@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance</title>
+</head>
+<body>
+    <h2>Attendance Marked</h2>
+    <ul>
+        {% for name, time in data.items() %}
+        <li>{{ name }} - {{ time }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
